@@ -622,13 +622,16 @@ Possible future extensions include:
 ## Team
 
 ### 1. Arugunta Sharvani
+2420090052
 Computer Science and Information Technology
 
 ### 2. Muppala Vinusha
-Computer Science and Information Technology
+2420030212
+Computer Science and Engineering
 
 ### 3. Kasarla Anjali
-Computer Science and Information Technology
+2420030170
+Computer Science and Engineering
 
 ---
 
