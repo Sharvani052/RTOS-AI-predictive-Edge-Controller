@@ -1,0 +1,14 @@
+html {
+  font-family: Inter, Arial, sans-serif;
+  background: #f6f3ef;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
