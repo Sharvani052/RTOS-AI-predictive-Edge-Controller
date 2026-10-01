@@ -69,7 +69,7 @@ function App() {
 
     try {
       const response = await fetch(
-        "http://127.0.0.1:8000/explainability"
+        "https://edge-ai-predictive-maintenance-api.onrender.com/explainability"
       );
 
       if (!response.ok) {
@@ -121,7 +121,7 @@ function App() {
 
     try {
       const response = await fetch(
-        "http://127.0.0.1:8000/predict",
+        "https://edge-ai-predictive-maintenance-api.onrender.com/predict",
         {
           method: "POST",
           headers: {
@@ -322,7 +322,7 @@ function App() {
       };
 
       const response = await fetch(
-        "http://127.0.0.1:8000/predict",
+        "https://edge-ai-predictive-maintenance-api.onrender.com/predict",
         {
           method: "POST",
           headers: {
