@@ -1,0 +1,12 @@
+{
+  "product_type": 0.04078762306610342,
+  "air_temperature": 0.0,
+  "process_temperature": 0.004219409282700279,
+  "rotational_speed": 0.26300984528832666,
+  "torque": 0.0,
+  "tool_wear": 0.015471167369901439,
+  "temperature_difference": 0.2883263009845292,
+  "torque_speed_index": 0.17299578059071768,
+  "speed_torque_ratio": 0.021097046413501706,
+  "wear_torque_index": 0.19409282700421968
+}

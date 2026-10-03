@@ -1,0 +1,77 @@
+{
+  "dataset": "AI4I 2020 Predictive Maintenance Dataset",
+  "features": [
+    "product_type",
+    "air_temperature",
+    "process_temperature",
+    "rotational_speed",
+    "torque",
+    "tool_wear",
+    "temperature_difference",
+    "torque_speed_index",
+    "speed_torque_ratio",
+    "wear_torque_index"
+  ],
+  "model_type": "validation-selected weighted ensemble",
+  "component_models": {
+    "random_forest": {
+      "n_estimators": 700,
+      "max_features": "sqrt"
+    },
+    "hist_gradient_boosting": {
+      "max_iter": 500,
+      "learning_rate": 0.04,
+      "max_leaf_nodes": 31
+    },
+    "gradient_boosting": {
+      "n_estimators": 500,
+      "learning_rate": 0.03,
+      "max_depth": 3
+    }
+  },
+  "split": {
+    "training": 6000,
+    "validation": 2000,
+    "test": 2000,
+    "stratified": true
+  },
+  "validation_accuracy": 0.9925,
+  "selected_parameters": {
+    "random_forest_weight": 0.0,
+    "hist_gradient_boosting_weight": 0.30000000000000004,
+    "gradient_boosting_weight": 0.7,
+    "threshold": 0.4700000000000001
+  },
+  "final_test_metrics": {
+    "accuracy": 0.9945,
+    "roc_auc": 0.9571459018389964,
+    "precision": 1.0,
+    "recall": 0.8382352941176471,
+    "f1": 0.912,
+    "confusion_matrix": [
+      [
+        1932,
+        0
+      ],
+      [
+        11,
+        57
+      ]
+    ],
+    "threshold": 0.4700000000000001
+  },
+  "feature_importance": {
+    "product_type": 0.04078762306610342,
+    "air_temperature": 0.0,
+    "process_temperature": 0.004219409282700279,
+    "rotational_speed": 0.26300984528832666,
+    "torque": 0.0,
+    "tool_wear": 0.015471167369901439,
+    "temperature_difference": 0.2883263009845292,
+    "torque_speed_index": 0.17299578059071768,
+    "speed_torque_ratio": 0.021097046413501706,
+    "wear_torque_index": 0.19409282700421968
+  },
+  "base_paper_accuracy": 0.9834,
+  "one_percentage_point_target": 0.9934
+}
